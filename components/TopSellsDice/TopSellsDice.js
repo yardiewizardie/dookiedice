@@ -3,5 +3,5 @@ import './topsellsdice.scss';
 
 
 export default () => (
-    <div>topsellsdice</div>
+    <section className="topsellsdice">topsellsdice</section>
 );

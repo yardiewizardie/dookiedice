@@ -3,5 +3,5 @@ import './dicemenu.scss';
 
 
 export default () => (
-    <div>dicemenu</div>
+    <section className="dicemenu">dicemenu</section>
 );

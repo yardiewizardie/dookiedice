@@ -13,7 +13,7 @@ import './index.scss';
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Home</title>
+      <title>Dookie</title>
     </Head>
 
     <Header />

@@ -3,5 +3,5 @@ import './footer.scss';
 
 
 export default () => (
-    <div>footer</div>
+    <footer className="footer">footer</footer>
 );
