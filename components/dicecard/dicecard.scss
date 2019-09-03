@@ -1,0 +1,30 @@
+.dicecard {
+    &__img{
+        width: 100%;
+    }
+
+    &__like {
+
+    }
+
+    &__name {
+
+    }
+    &__bg {
+        background-color: rgb(247, 242, 221);
+        z-index: 20;
+        height: 100%;
+    
+    }
+
+    &__type {
+        svg {
+            fill: white;
+            height: 2rem;
+            width: 2rem;
+        }
+        p {
+
+        }
+    }
+}
