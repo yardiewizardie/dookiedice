@@ -4,8 +4,7 @@ import './dicecard.scss'
 export default props => (
     <div className="dicecard">
         <img src={props.img} alt={props.name} className="dicecard__img" />
-        <div className="dicecard__bg">
-        <svg />
+        {/* <svg className="dicecard__like" /> */}
         <h5 className="dicecard__name">{props.name}</h5>
         <div className="dicecard__type">
             <svg />
@@ -15,8 +14,7 @@ export default props => (
             <svg />
             <p>{props.price}</p>
         </div>
-        <button className="cto">BUY NOW</button>
-        </div>
+        <button className="dicecard__btn">BUY NOW</button>
     </div>
 )
 
