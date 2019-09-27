@@ -30,7 +30,8 @@
 
 
     &__content {
-        background-color: rgb(83, 81, 81);
+        //background-color: rgb(83, 81, 81);
+        background: rgba(248,231,150, .8);
         grid-column: col-start 5 / full-end;
         padding: 6rem 8vw;
         display: flex;

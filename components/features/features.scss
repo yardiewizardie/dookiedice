@@ -1,18 +1,26 @@
 .features {
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     display: grid;
-
-    margin: 15rem 0;
+    padding: 10rem 3rem;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 5rem;
+    grid-gap: 7.1rem;
     align-items: start;
+    background:
+  radial-gradient(rgba(206, 42, 42, .2) 13%, transparent 13%) 0 0,
+  radial-gradient(rgba(206, 42, 42, .2) 13%, transparent 13%) 16px 16px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 16px 17px;
+  background-size: 32px 32px;
+  background-color: rgba(206, 42, 42, .03);
+    overflow-x: hidden;
+
 }
 
 .feature {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-row-gap: 1.5rem;
-    grid-column-gap: 2rem;
+    grid-row-gap: .5rem;
+    grid-column-gap: 1.5rem;
     &__icon {
         width: 4.5rem;
         height: 4.5rem;
@@ -23,11 +31,13 @@
     &__title {
         font-family: 'Pacifico', cursive;
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 3.2rem;
+        text-shadow: 2px 0 0 whitesmoke, -2px 0 0 whitesmoke, 0 2px 0 whitesmoke, 0 -2px 0 whitesmoke, 1px 1px whitesmoke, -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke;
         color:rgb(95, 58, 2);
     }
     &__text {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        font-family: 'ComingSoon', cursive;
     }
 }
 
@@ -35,17 +45,16 @@
 	margin: 40px;
   display: inline-block;
   position: relative;
-	width: 200px;
+	width: 250px;
   height: auto;
-  font-weight: bold;
   background:
-  radial-gradient(#f5dc66 15%, transparent 15%) 0 0,
+  radial-gradient(#f4d856 15%, transparent 15%) 0 0,
   radial-gradient(#f4d856 15%, transparent 15%) 16px 16px,
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 16px 17px;
   background-size: 32px 32px;
   background-color: #F8E796;
-  padding: 7%;
+  padding: 5%;
   color:rgb(95, 58, 2);
 }
 

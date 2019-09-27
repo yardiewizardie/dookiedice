@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './features.scss';
 
 import dice from '../../static/icons/dice.svg';
@@ -7,6 +8,7 @@ import cleric from '../../static/icons/clericicon.svg';
 import druid from '../../static/icons/druidicon.svg';
 import fighter from '../../static/icons/fightericon.svg';
 import wizard from '../../static/icons/wizardicon.svg';
+
 
 export default () => (
     <section className="features">
@@ -39,7 +41,7 @@ export default () => (
         </div></div>
         <div className="feature"> <div className="feature">
            <img src={druid} className="feature__icon" />
-            <h4 className="feature__title">Colorful & Resillences</h4>
+            <h4 className="feature__title">Colorful & Brilliant</h4>
             <div className="talk-bubble tri-right round left-in">
                 <div className="talktext">
             <p className="feature__text">You can pick from quite variations of sets, make your choice!</p>
