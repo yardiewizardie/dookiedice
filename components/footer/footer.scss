@@ -1,4 +1,25 @@
 .footer {
     background-color: rgb(80, 78, 78);
     grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+.nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    &__link:link,
+    :visited {
+        font-size: 1.4rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'ComingSoon', cursive;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+
+
+    }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 import Header from '../components/header/header'
 import Sidebar from '../components/sidebar'
@@ -15,7 +14,6 @@ const Home = () => (
         <Head>
             <title>Dookie</title>
         </Head>
-
         <Header />
         <Sidebar />
         <TopSellsDice />
