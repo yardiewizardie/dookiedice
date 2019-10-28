@@ -7,6 +7,6 @@ export default (props) => (
 			<i>{fecha.format(props.message.createdAt, 'shortTime')}</i>
 			{props.message.author}
 		</div>:
-		<div>{props.message.message}</div>
+		<div>{props.message.body}</div>
 	</li>
 );
