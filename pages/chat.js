@@ -14,20 +14,19 @@ class Chat extends Component {
 	};
 
 	componentDidMount() {
-		let socket = (this.socket = new Socket());
-		socket.on('connect', this.onConnect.bind(this));
+		let ws = new WebSocket('ws://localhost:4000')
+		let socket = this.socket = new Socket(ws); 
 		socket.on('disconnect', this.onDisconnect.bind(this));
 		socket.on('channel add', this.newChannel.bind(this));
 		socket.on('user add', this.addUser.bind(this));
 		socket.on('user edit', this.editUser.bind(this));
 		socket.on('user remove', this.removeUser.bind(this));
 		socket.on('message add', this.addMessage.bind(this));
-	}
-
-	onConnect() {
-		this.setState({ connected: true });
-		this.socket.emit('channel subscribe');
-		this.socket.emit('user subscribe');
+		ws.onopen = () => {
+			this.setState({ connected: true });
+			this.socket.emit('channel subscribe');
+			this.socket.emit('user subscribe');
+		}
 	}
 
 	onDisconnect() {
