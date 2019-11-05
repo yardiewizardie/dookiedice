@@ -1,25 +1,33 @@
 .footer {
     background-color: rgb(80, 78, 78);
     grid-column: full-start / full-end;
-    padding: 8rem;
+    padding: 2.5vw;
 }
 
 .nav {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center;
 
-    &__link:link,
+    a, &__link:link,
     :visited {
         font-size: 1.4rem;
+        padding: 1rem;
+        border-radius: 3px;
         color: #ffffff;
         text-decoration: none;
         font-family: 'ComingSoon', cursive;
         text-transform: uppercase;
         text-align: center;
-        padding: 1.5rem;
         display: block;
-
-
+        margin: auto;
+        width: fit-content;
+        transition: all .2s;
+        &:hover{
+            background: rgba(#ffffff, .05);
+            transform: translateY(-3px);
+        }
     }
+
 }

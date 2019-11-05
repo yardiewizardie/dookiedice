@@ -1,5 +1,33 @@
 .sidebar {
     background-color: rgb(175, 36, 36);
-    grid-column: side-start / side-end; 
-    grid-row: 1 / -1;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 5.85vw;
+    height: 100vh;
+    &__button {
+        border: none;
+        border-radius: 0;
+
+        background-color: #ffffff;
+        height: 3px;
+        width: 4.5rem;
+        margin-top: 4rem;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: #ffffff;
+            height: 3px;
+            width: 4.5rem;
+            display: block;
+        }
+        &::before {
+            transform: translateY(-1.5rem);
+        }
+        
+        &::after {
+            transform: translateY(1.3rem);
+        }
+    }
 }

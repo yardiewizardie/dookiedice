@@ -3,5 +3,7 @@ import './sidebar.scss';
 
 
 export default () => (
-    <div className="sidebar">sidebar</div>
+    <div className="sidebar">
+        <button className="sidebar__button"></button>
+    </div>
 );
